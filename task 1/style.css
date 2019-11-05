@@ -1,0 +1,27 @@
+.container {
+  margin: 0 auto;
+  width: 800px;
+  margin-top: 10%;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+}
+
+.firstBlock {
+  width: 60%;
+  padding: 5%;
+}
+
+.firstBlock input {
+  border-radius: 5px;
+}
+
+.secondBlock {
+  width: 50%;
+  height: 100%;
+}
+
+.thirdBlock {
+  width: 50%;
+  height: 100%;
+}
