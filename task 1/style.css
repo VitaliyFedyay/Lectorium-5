@@ -19,9 +19,11 @@
 .secondBlock {
   width: 50%;
   height: 100%;
+  padding: 3%;
 }
 
 .thirdBlock {
   width: 50%;
   height: 100%;
+  padding: 5%;
 }
