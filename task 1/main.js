@@ -1,14 +1,11 @@
 let array = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-function result(array) {
-  let search = document.getElementById('search').value
-  array.forEach(function (item) {
-    if (item === search) {
-      document.getElementById('result').innerHTML = item
-    }
-    else {
-      document.getElementById('result').innerHTML = 'not found'
-    }
+function search(array) {
+  let button = document.getElementById('button')
+  button.addEventListener("click", () => {
+    let search = document.getElementById('search')
+    let result = array.find((item) => item == search.value)
+    document.getElementById('result').innerHTML = result
   })
 }
 
@@ -28,8 +25,11 @@ window.onload = function () {
   })
 }
 
-let myDebounce = debounce(result, 1000)
-myDebounce()
+let result = debounce(search, 1000)
+result(array)
+
+
+
 
 
 
