@@ -3,22 +3,26 @@
 }
 
 body {
-  background: linear-gradient(to right, rgb(163, 79, 163), rgb(90, 96, 184));
+  background: linear-gradient(to right, rgba(180, 59, 180, 0.95), rgba(67, 76, 202, 0.95));
 }
 
 .wrapper {
+  padding: 5%;
+}
+
+.container {
   padding-top: 20px;
   margin: 0 auto;
   width: 50vw;
-  border: 1px solid black;
   border-radius: 10px;
+  box-shadow: 0 0 20px rgb(183, 170, 190);
   padding: 5%;
-  background: rgb(90, 214, 214);
+  background: rgba(62, 202, 226, 0.8);
   display: flex;
   flex-direction: column;
 }
 
-.wrapper div {
+.container div {
   margin-top: 5%;
 }
 
@@ -34,4 +38,8 @@ body {
 
 .content {
   margin: 0;
+}
+
+.todo-trash {
+  float: right;
 }
